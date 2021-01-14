@@ -1,8 +1,9 @@
+
+
+
 <!DOCTYPE html>
-<html lang="en">
-
 {% load static %}
-
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href="{% static 'css/toolkit.css' %}" rel="stylesheet">
     
-    <link href="{% static 'css/application.css' %}" rel="stylesheet">
+    <link href="{% static 'css/application.css' %} " rel="stylesheet">
 
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
@@ -54,7 +55,7 @@
   </button>
 
   <a class="navbar-brand" href="index.html">
-    <img src="{% static 'img/brand-white.png' %} " alt="brand">
+    <img src="assets/img/brand-white.png" alt="brand">
   </a>
 
   <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -96,7 +97,7 @@
       </li>
       <li class="nav-item ml-2">
         <button class="btn btn-default navbar-btn navbar-btn-avatar" data-toggle="popover">
-          <img class="rounded-circle" src="{% static 'img/avatar-dhg.png' %}">
+          <img class="rounded-circle" src="assets/img/avatar-dhg.png">
         </button>
       </li>
     </ul>
@@ -121,7 +122,7 @@
           <div class="media-list media-list-users list-group js-msgGroup">
             <a href="#" class="list-group-item list-group-item-action">
               <div class="media">
-                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="{% static 'assets/img/avatar-fat.jpg' %}">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="assets/img/avatar-fat.jpg">
                 <div class="media-body">
                   <strong>Jacob Thornton</strong> and <strong>1 other</strong>
                   <div class="media-body-secondary">
@@ -132,7 +133,7 @@
             </a>
             <a href="#" class="list-group-item list-group-item-action">
               <div class="media">
-                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="{% static 'img/avatar-mdo.png' %} ">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="assets/img/avatar-mdo.png">
                 <div class="media-body">
                   <strong>Mark Otto</strong> and <strong>3 others</strong>
                   <div class="media-body-secondary">
@@ -143,7 +144,7 @@
             </a>
             <a href="#" class="list-group-item list-group-item-action">
               <div class="media">
-                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="{% static 'img/avatar-dhg.png' %}">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="assets/img/avatar-dhg.png">
                 <div class="media-body">
                   <strong>Dave Gamache</strong>
                   <div class="media-body-secondary">
@@ -481,110 +482,6 @@
             </div>
           </div>
         </li>
-
-        <li class="media list-group-item p-4">
-          <img
-            class="media-object d-flex align-self-start mr-3"
-            src="assets/img/avatar-dhg.png">
-          <div class="media-body">
-            <div class="media-heading">
-              <small class="float-right text-muted">4 min</small>
-              <h6>Dave Gamache</h6>
-            </div>
-
-            <p>
-              Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-
-            <div class="media-body-inline-grid" data-grid="images">
-              <div style="display: none">
-                <img data-action="zoom" data-width="1050" data-height="700" src="assets/img/unsplash_1.jpg">
-              </div>
-
-              <div style="display: none">
-                <img data-action="zoom" data-width="640" data-height="640" src="assets/img/instagram_1.jpg">
-              </div>
-
-              <div style="display: none">
-                <img data-action="zoom" data-width="640" data-height="640" src="assets/img/instagram_13.jpg">
-              </div>
-
-              <div style="display: none">
-                <img data-action="zoom" data-width="1048" data-height="700" src="assets/img/unsplash_2.jpg">
-              </div>
-            </div>
-
-            <ul class="media-list mb-2">
-              <li class="media mb-3">
-                <img
-                  class="media-object d-flex align-self-start mr-3"
-                  src="assets/img/avatar-fat.jpg">
-                <div class="media-body">
-                  <strong>Jacon Thornton: </strong>
-                  Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
-                </div>
-              </li>
-              <li class="media">
-                <img
-                  class="media-object d-flex align-self-start mr-3"
-                  src="assets/img/avatar-mdo.png">
-                <div class="media-body">
-                  <strong>Mark Otto: </strong>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="media list-group-item p-4">
-          <img
-            class="media-object d-flex align-self-start mr-3"
-            src="assets/img/avatar-fat.jpg">
-          <div class="media-body">
-            <div class="media-body-text">
-              <div class="media-heading">
-                <small class="float-right text-muted">12 min</small>
-                <h6>Jacob Thornton</h6>
-              </div>
-              <p>
-                Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="media list-group-item p-4">
-          <img
-            class="media-object d-flex align-self-start mr-3"
-            src="assets/img/avatar-mdo.png">
-          <div class="media-body">
-            <div class="media-heading">
-              <small class="float-right text-muted">34 min</small>
-              <h6>Mark Otto</h6>
-            </div>
-
-            <p>
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            </p>
-
-            <div class="media-body-inline-grid" data-grid="images">
-              <img style="display: none" data-width="640" data-height="640" data-action="zoom" src="assets/img/instagram_3.jpg">
-            </div>
-
-            <ul class="media-list">
-              <li class="media">
-                <img
-                  class="media-object d-flex align-self-start mr-3"
-                  src="assets/img/avatar-dhg.png">
-                <div class="media-body">
-                  <strong>Dave Gamache: </strong>
-                  Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </li>
       </ul>
     </div>
     <div class="col-lg-3">
@@ -664,9 +561,9 @@
 </div>
 
 
-    <script src="{% static 'js/jquery.min.js' %} "></script>    
+    <script src="{% static 'js/jquery.min.js' %}"></script>    
     <script src="{% static 'js/tether.min.js' %}"></script>
-    <script src="{% static 'js/chart.js' %}"></script>}
+    <script src="{% static 'js/chart.js' %}"></script>
     <script src="{% static 'js/toolkit.js' %}"></script>
     <script src="{% static 'js/application.js' %}"></script>
     <script>
@@ -679,4 +576,3 @@
     </script>
   </body>
 </html>
-
