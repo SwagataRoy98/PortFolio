@@ -482,6 +482,13 @@
             </div>
           </div>
         </li>
+        {% for project in projects %}
+        <li class = "media list-group-item p-4">
+          <h1>{{ project.project_name }}</h1>
+          <p>{{ project.project_desc }}</p>
+          <button class="btn-primary" onclick="location.href = '{{ project.github_link }}';">Check out git repository</button>
+        </li>
+        {% endfor %}
       </ul>
     </div>
     <div class="col-lg-3">
