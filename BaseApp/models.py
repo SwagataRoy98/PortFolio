@@ -10,3 +10,20 @@ class Project(models.Model):
 	live_url = models.CharField(max_length=250,blank=True)
 	def __str__(self):
 		return f'{self.project_name}'
+class Education(models.Model):
+	level = models.CharField(max_length=30)
+	institute = models.CharField(max_length = 200)
+	start_date = models.DateField()
+	end_date = models.DateField()
+	stream = models.CharField(max_length=200)
+	grade = models.DecimalField(max_digits=5,decimal_places=2)
+	def __str__(self):
+		return f'{self.level}'
+class Certificate(models.Model):
+	name = models.CharField(max_length=350)
+	start_date = models.DateField()
+	end_date = models.DateField()
+	description = models.TextField()
+	verification_link = models.CharField(max_length=300,blank=True)
+	def __str__(self):
+		return f'{self.name}'
