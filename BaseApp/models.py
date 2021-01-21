@@ -10,6 +10,8 @@ class Project(models.Model):
 	live_url = models.CharField(max_length=250,blank=True)
 	def __str__(self):
 		return f'{self.project_name}'
+
+
 class Education(models.Model):
 	level = models.CharField(max_length=30)
 	institute = models.CharField(max_length = 200)
@@ -19,6 +21,8 @@ class Education(models.Model):
 	grade = models.DecimalField(max_digits=5,decimal_places=2)
 	def __str__(self):
 		return f'{self.level}'
+
+
 class Certificate(models.Model):
 	name = models.CharField(max_length=350)
 	start_date = models.DateField()
@@ -27,3 +31,17 @@ class Certificate(models.Model):
 	verification_link = models.CharField(max_length=300,blank=True)
 	def __str__(self):
 		return f'{self.name}'
+
+
+class About(models.Model):
+	place = models.CharField(max_length=250)
+	mail_id = models.EmailField()
+
+
+class Experience(models.Model):
+	company = models.CharField(max_length=150)
+	experience = models.IntegerField()
+	role = models.CharField(max_length=250)
+	def __str__(self):
+		return f'In {self.company}  worked as a {self.role} for {self.experience} years'
+

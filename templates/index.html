@@ -61,7 +61,7 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="projects">Profile</a>
@@ -467,7 +467,16 @@
           </div>
         </li>
         {% block content %}
-
+          {% for education in educations %}
+            <li class = "media list-group-item p-4">
+                <h3>{{ education.level }}<br></h3>
+                <hr width = 100% align= left size = 2>
+                <p>Institute : {{ education.institute }}<br>
+                {{ education.start_date }} - {{ education.end_date }}<br>
+                Stream : {{ education.stream }}<br>
+                Grade : {{ education.grade }}</p>
+            </li>  
+          {% endfor %}
         {% endblock %}
       </ul>
     </div>
