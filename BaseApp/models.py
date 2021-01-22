@@ -43,5 +43,5 @@ class Experience(models.Model):
 	experience = models.IntegerField()
 	role = models.CharField(max_length=250)
 	def __str__(self):
-		return f'In {self.company}  worked as a {self.role} for {self.experience} years'
+		return f'In {self.company}  worked as a {self.role}  for {self.experience} years'
 

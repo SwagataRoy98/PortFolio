@@ -420,7 +420,7 @@
         </div>
       </div>
 
-       <div class="card visible-md-block visible-lg-block">
+       <!-- <div class="card visible-md-block visible-lg-block">
         <div class="card-block">
           <h6 class="mb-3">Photos <small>· <a href="#">Edit</a></small></h6>
           <div data-grid="images" data-target-height="150">
@@ -449,7 +449,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="col-lg-6">
@@ -465,6 +465,7 @@
               </button>
             </div>
           </div>
+        </li class = "media list-group-item p-4"><h1>Academic Details</h1>
         </li>
         {% block content %}
           {% for education in educations %}
@@ -477,7 +478,22 @@
                 Grade : {{ education.grade }}</p>
             </li>  
           {% endfor %}
+
+          {% for certificate in certificates%}
+
+            <li class = "media list-group-item p-4">
+                <h3> {{ certificate.name }} </h3>
+                <hr width = 100% align= left size = 2>
+                <p>{{ certificate.start_date }} - {{ certificate.end_date }}<br>{{ certificate.description }}
+                </p>
+
+            </li>  
+
+
+          {% endfor %}
+
         {% endblock %}
+
       </ul>
     </div>
     <div class="col-lg-3">
